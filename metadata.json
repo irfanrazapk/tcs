@@ -1,0 +1,6 @@
+{
+  "name": "TRUST CODE SYSTEM",
+  "description": "Modular Event Perimeter System transforming underutilized venue boundaries into high-revenue commercial, sponsorship, and hospitality infrastructure.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
