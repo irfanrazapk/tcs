@@ -10,7 +10,7 @@ export function SolutionsGrid() {
   const [activeModalItem, setActiveModalItem] = useState<SolutionItem | null>(null);
 
   return (
-    <section id="solutions" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF]">
+    <section id="solutions" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-14">

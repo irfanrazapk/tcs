@@ -1,6 +1,8 @@
 'use client';
 
 import React from 'react';
+import Image from 'next/image';
+import { theme } from '@/src/config/theme';
 import { INVESTOR_THESIS_POINTS } from '@/lib/data';
 import { ShieldCheck, TrendingUp, Layers, RefreshCw, Handshake, Compass, AlertCircle } from 'lucide-react';
 
@@ -25,10 +27,10 @@ export function InvestorThesisSection() {
   };
 
   return (
-    <section id="investors" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF]">
+    <section id="investors" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
-        <div className="max-w-3xl mb-14">
+        <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-semibold text-[#2457A7] uppercase tracking-wider mb-2">
             <span>Investment Thesis</span>
             <span aria-hidden="true" className="text-[#D0D7E2]">·</span>
@@ -40,6 +42,59 @@ export function InvestorThesisSection() {
           <p className="text-base sm:text-lg text-[#657184] leading-relaxed">
             By turning transient perimeter boundaries into modular, reusable, and utility-connected commercial infrastructure, TRUST CODE SYSTEM addresses structural inefficiencies in temporary live event production.
           </p>
+        </div>
+
+        {/* Company Representation Spotlight Card */}
+        <div className="mb-14 bg-white border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            <div className="lg:col-span-4 relative flex justify-center">
+              <div className="relative w-full max-w-[280px] aspect-2/3 rounded-sm overflow-hidden border border-[#E4E8EF] shadow-md bg-[#F7F8FA]">
+                <Image
+                  src={theme.media.modelRepresentativeImage}
+                  alt="Company Representative - TRUST CODE SYSTEM"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 320px"
+                  referrerPolicy="no-referrer"
+                />
+              </div>
+            </div>
+
+            <div className="lg:col-span-8 flex flex-col justify-center">
+              <div className="flex items-center gap-2 text-xs font-semibold text-[#2457A7] uppercase tracking-wider mb-2">
+                <span>Corporate Leadership &amp; Representation</span>
+                <span aria-hidden="true" className="text-[#D0D7E2]">·</span>
+                <span className="text-[#D9A65A]">Executive Outreach</span>
+              </div>
+              <h3 className="text-2xl sm:text-3xl font-extrabold text-[#14243A] tracking-tight leading-tight mb-3">
+                Representing the Future of Live Event Infrastructure.
+              </h3>
+              <p className="text-sm text-[#657184] leading-relaxed mb-6">
+                TRUST CODE SYSTEM bridges institutional capital with global festival promoters. As the official representative of our corporate identity and strategic investor relations, our team is dedicated to structuring high-yield commercial frameworks, scalable modular deployment logistics, and long-term promoter partnerships.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-4 border-t border-[#E4E8EF]">
+                <div>
+                  <div className="text-xs font-bold text-[#14243A]">Institutional Alignment</div>
+                  <div className="text-[11px] text-[#657184] mt-0.5">
+                    Direct engagement with private equity &amp; infrastructure funds
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-[#14243A]">Promoter Frameworks</div>
+                  <div className="text-[11px] text-[#657184] mt-0.5">
+                    Customized commercial revenue-sharing models for top promoters
+                  </div>
+                </div>
+                <div>
+                  <div className="text-xs font-bold text-[#14243A]">Turnkey Execution</div>
+                  <div className="text-[11px] text-[#657184] mt-0.5">
+                    End-to-end engineering, logistics, and site permit delivery
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* 6 Thesis Cards Grid */}

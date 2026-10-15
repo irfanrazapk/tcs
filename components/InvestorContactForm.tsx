@@ -122,7 +122,7 @@ export function InvestorContactForm({
   ];
 
   return (
-    <section id="contact" className="py-20 bg-white border-b border-[#E4E8EF]">
+    <section id="contact" className="py-20 bg-white border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl mb-12">
           <div className="flex items-center gap-2 text-xs font-semibold text-[#2457A7] uppercase tracking-wider mb-2">

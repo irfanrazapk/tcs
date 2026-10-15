@@ -75,7 +75,7 @@ export function RevenueCalculator() {
   };
 
   return (
-    <section id="revenue-potential" className="py-20 bg-white border-b border-[#E4E8EF]">
+    <section id="revenue-potential" className="py-20 bg-white border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Prominent Headline & Investor Opportunity Statement */}
         <div className="max-w-3xl mb-12">
@@ -114,7 +114,7 @@ export function RevenueCalculator() {
         </div>
 
         {/* Interactive Calculator Section */}
-        <div id="calculator" className="bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs">
+        <div id="calculator" className="bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs scroll-mt-20 lg:scroll-mt-24">
           {/* Controls Bar */}
           <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-[#E4E8EF] gap-4">
             <div>

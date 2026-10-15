@@ -128,4 +128,3 @@ npm run start
 ## 7. Financial Integrity & Compliance Notice
 
 The stated figure of **$200 million–$500 million** represents a preliminary potential gross revenue opportunity at scale and is not verified annual company revenue, net profit, valuation, or a guaranteed financial forecast. Actual performance is subject to negotiated commercial agreements, event cadence, unit utilization, capital requirements, operating costs, and market demand.
-# tcs

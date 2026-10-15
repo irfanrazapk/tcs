@@ -27,7 +27,7 @@ export function ModularSystemSection() {
   };
 
   return (
-    <section id="the-system" className="py-20 bg-white border-b border-[#E4E8EF]">
+    <section id="the-system" className="py-20 bg-white border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="max-w-3xl mb-12">
@@ -49,8 +49,8 @@ export function ModularSystemSection() {
           <div className="relative rounded-sm overflow-hidden border border-[#E4E8EF] shadow-sm bg-[#F7F8FA]">
             <div className="relative aspect-16/9 w-full">
               <Image
-                src={theme.media.modularPodSystem}
-                alt="TRUST CODE SYSTEM - Architectural Exploded View and Construction Method Diagram"
+                src={theme.media.containerCafeImage}
+                alt="TRUST CODE SYSTEM - Actual Assembled Container Pod Architecture with Café & Digital Perimeter Screens"
                 fill
                 className="object-cover"
                 sizes="(max-width: 1280px) 100vw, 1200px"
@@ -61,18 +61,18 @@ export function ModularSystemSection() {
               {/* Exploded callout overlay */}
               <div className="absolute top-4 left-4 hidden sm:inline-flex items-center gap-2 px-3 py-1.5 bg-white/95 backdrop-blur-xs border border-[#E4E8EF] text-[11px] font-semibold text-[#14243A] rounded-2xs shadow-2xs">
                 <span className="w-2 h-2 rounded-full bg-[#2457A7]" />
-                <span>Exploded Isometric Engineering Blueprint</span>
+                <span>Actual Pod Assembly Concept &amp; Architecture</span>
               </div>
 
               <div className="absolute bottom-4 left-4 right-4 flex flex-col sm:flex-row sm:items-center justify-between gap-2 p-3 bg-[#14243A]/90 backdrop-blur-xs text-white rounded-2xs text-xs">
                 <div>
-                  <span className="font-bold text-[#D9A65A]">SYSTEM OVERVIEW: </span>
+                  <span className="font-bold text-[#D9A65A]">POD ARCHITECTURE: </span>
                   <span className="text-slate-200">
-                    Precision cassettes, integrated perimeter screens, and quick-couple service raceways.
+                    Assembled custom container café pod with central high-throughput service window and flanking digital perimeter screens.
                   </span>
                 </div>
                 <div className="text-[10px] text-slate-300 font-mono shrink-0">
-                  REF: TCS-ENG-2026-V1
+                  REF: TCS-POD-CAFE-01
                 </div>
               </div>
             </div>

@@ -8,7 +8,7 @@
 export const theme = {
   brand: {
     name: 'TRUST CODE SYSTEM',
-    shortName: 'TRUST CODE',
+    shortName: 'TCSweREAL',
     productName: 'Modular Event Perimeter System',
     tagline: 'Every Inch Matters.',
     positioning: 'Transforming Event Perimeters Into Revenue-Generating Infrastructure.',
@@ -58,8 +58,13 @@ export const theme = {
     fontMono: 'var(--font-mono, monospace)',
   },
   media: {
-    heroImage: '/images/hero_festival_perimeter.jpg',
-    modularPodSystem: '/images/modular_pod_system.jpg',
+    logo: '/images/tcs-logo.svg',
+    stageImage: '/images/stage_super_coachella.jpg',
+    containerCafeImage: '/images/container_custom_cafe.jpg',
+    modelRepresentativeImage: '/images/model_representative.jpg',
+    eventMapImage: '/images/tcs_event_site_map.jpg',
+    heroImage: '/images/stage_super_coachella.jpg',
+    modularPodSystem: '/images/container_custom_cafe.jpg',
     hospitalityRetail: '/images/hospitality_retail_activation.jpg',
     essentialServices: '/images/essential_services_pod.jpg',
     visionVideoUrl: 'https://www.youtube.com/embed/XpX3g_WcJ1E?si=CywOK-8z63XMLUyA',

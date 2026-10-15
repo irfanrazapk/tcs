@@ -1,15 +1,24 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
 import { theme } from '@/src/config/theme';
 import { LegalModal } from './LegalModal';
-import { Grid, ArrowUp, Shield } from 'lucide-react';
+import { Grid, ArrowUp } from 'lucide-react';
 
 export function Footer() {
   const [legalType, setLegalType] = useState<'privacy' | 'terms' | null>(null);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -20,8 +29,14 @@ export function Footer() {
             {/* Col 1-2: Brand lockup and statement */}
             <div className="lg:col-span-2">
               <div className="flex items-center gap-3 text-slate-900 mb-4">
-                <div className="w-8 h-8 rounded-sm bg-[#14243A] text-white flex items-center justify-center font-bold text-xs tracking-widest shadow-xs">
-                  <Grid className="w-4 h-4 text-[#D9A65A]" />
+                <div className="relative w-8 h-8 flex items-center justify-center shrink-0">
+                  <Image
+                    src={theme.media.logo}
+                    alt="TCSweREAL Logo"
+                    width={32}
+                    height={32}
+                    className="w-8 h-8 object-contain"
+                  />
                 </div>
                 <span className="font-bold tracking-tight text-lg text-[#14243A]">
                   {theme.brand.name}
@@ -45,27 +60,38 @@ export function Footer() {
               </div>
               <ul className="space-y-2 text-xs text-[#657184]">
                 <li>
-                  <a href="#the-system" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#opportunity"
+                    onClick={(e) => handleLinkClick(e, '#opportunity')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
+                    The Opportunity
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#the-system"
+                    onClick={(e) => handleLinkClick(e, '#the-system')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Modular Pods &amp; Panels
                   </a>
                 </li>
                 <li>
-                  <a href="#solutions" className="hover:text-[#2457A7] transition-colors">
-                    Commercial Solutions
+                  <a
+                    href="#solutions"
+                    onClick={(e) => handleLinkClick(e, '#solutions')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
+                    Commercial Ecosystem
                   </a>
                 </li>
                 <li>
-                  <a href="#solutions" className="hover:text-[#2457A7] transition-colors">
-                    Retail &amp; Concessions
-                  </a>
-                </li>
-                <li>
-                  <a href="#solutions" className="hover:text-[#2457A7] transition-colors">
-                    VIP &amp; Hospitality
-                  </a>
-                </li>
-                <li>
-                  <a href="#scenarios" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#scenarios"
+                    onClick={(e) => handleLinkClick(e, '#scenarios')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Deployment Scenarios
                   </a>
                 </li>
@@ -79,27 +105,47 @@ export function Footer() {
               </div>
               <ul className="space-y-2 text-xs text-[#657184]">
                 <li>
-                  <a href="#business-model" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#business-model"
+                    onClick={(e) => handleLinkClick(e, '#business-model')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     4-Step Methodology
                   </a>
                 </li>
                 <li>
-                  <a href="#revenue-streams" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#revenue-streams"
+                    onClick={(e) => handleLinkClick(e, '#revenue-streams')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     7 Revenue Streams
                   </a>
                 </li>
                 <li>
-                  <a href="#revenue-potential" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#revenue-potential"
+                    onClick={(e) => handleLinkClick(e, '#revenue-potential')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     $200M–$500M Opportunity
                   </a>
                 </li>
                 <li>
-                  <a href="#calculator" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#calculator"
+                    onClick={(e) => handleLinkClick(e, '#calculator')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Revenue Calculator
                   </a>
                 </li>
                 <li>
-                  <a href="#gtm" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#gtm"
+                    onClick={(e) => handleLinkClick(e, '#gtm')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Go-to-Market Roadmap
                   </a>
                 </li>
@@ -113,22 +159,38 @@ export function Footer() {
               </div>
               <ul className="space-y-2 text-xs text-[#657184]">
                 <li>
-                  <a href="#investors" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#investors"
+                    onClick={(e) => handleLinkClick(e, '#investors')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Investment Thesis
                   </a>
                 </li>
                 <li>
-                  <a href="#capital" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#capital"
+                    onClick={(e) => handleLinkClick(e, '#capital')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Capital Deployment
                   </a>
                 </li>
                 <li>
-                  <a href="#vision-video" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#vision-video"
+                    onClick={(e) => handleLinkClick(e, '#vision-video')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Vision Presentation
                   </a>
                 </li>
                 <li>
-                  <a href="#contact" className="hover:text-[#2457A7] transition-colors">
+                  <a
+                    href="#contact"
+                    onClick={(e) => handleLinkClick(e, '#contact')}
+                    className="hover:text-[#2457A7] transition-colors cursor-pointer"
+                  >
                     Executive Inquiries
                   </a>
                 </li>

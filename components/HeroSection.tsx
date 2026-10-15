@@ -75,8 +75,8 @@ export function HeroSection() {
             <div className="relative rounded-sm overflow-hidden border border-[#E4E8EF] shadow-md bg-[#F7F8FA]">
               <div className="relative aspect-16/9 sm:aspect-16/10 w-full">
                 <Image
-                  src={theme.media.heroImage}
-                  alt="TRUST CODE SYSTEM - Twilight Festival Perimeter Architectural Rendering"
+                  src={theme.media.stageImage}
+                  alt="TRUST CODE SYSTEM - Super Coachella Vision Stage & Perimeter Architecture"
                   fill
                   priority
                   className="object-cover"
@@ -88,8 +88,8 @@ export function HeroSection() {
 
                 {/* Concept watermark caption */}
                 <div className="absolute bottom-3 left-3 right-3 flex items-center justify-between text-[11px] text-white/90 bg-[#14243A]/85 backdrop-blur-xs px-3 py-1.5 rounded-sm">
-                  <span className="font-medium tracking-wide">Architectural Concept: Integrated Festival Perimeter</span>
-                  <span className="text-[#D9A65A] font-mono text-[10px]">CONCEPT RENDERING</span>
+                  <span className="font-medium tracking-wide">Featured Vision: Super Coachella Stage &amp; Perimeter Integration</span>
+                  <span className="text-[#D9A65A] font-mono text-[10px]">VIDEO STAGE SHOWCASE</span>
                 </div>
               </div>
             </div>

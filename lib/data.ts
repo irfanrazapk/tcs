@@ -112,7 +112,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Sanitary, code-compliant commercial food service pods engineered with grease-trapping conduits, high-capacity cold storage, and dual-window POS queuing.',
     commercialOpportunity:
       'Concessionaire rental fees, percentage-of-gross revenue sharing, and beverage vendor exclusivity contracts.',
-    image: '/images/essential_services_pod.jpg',
+    image: '/images/container_custom_cafe.jpg',
     capabilities: [
       'Health department approved stainless surfaces',
       'High-capacity potable water and graywater connections',
@@ -184,7 +184,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Connected digital perimeter panels providing schedule updates, festival wayfinding, emergency safety alerts, and monetizable dynamic digital advertising.',
     commercialOpportunity:
       'Programmatic digital ad rotations, sponsor screen takeovers, and media network revenue-sharing.',
-    image: '/images/hero_festival_perimeter.jpg',
+    image: '/images/stage_super_coachella.jpg',
     capabilities: [
       'High-brightness daylight-viewable LED screens',
       'Dynamic programmatic ad scheduler',

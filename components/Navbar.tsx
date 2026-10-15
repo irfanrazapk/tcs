@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { theme } from '@/src/config/theme';
 import { Menu, X, ArrowUpRight, Grid } from 'lucide-react';
 
@@ -29,8 +30,24 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
     { label: 'Contact', href: '#contact' },
   ];
 
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    const target = document.querySelector(href);
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
+  const handleBrandClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    setMobileMenuOpen(false);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   const handleCtaClick = (e: React.MouseEvent) => {
     e.preventDefault();
+    setMobileMenuOpen(false);
     if (onOpenInquiry) {
       onOpenInquiry('Investor');
     }
@@ -52,12 +69,20 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
         <div className="flex items-center justify-between gap-8 h-20">
           {/* Zone 1: Brand Wordmark (1 single text element + minimal architectural mark) */}
           <a
-            href="#"
-            className="flex items-center gap-3 text-slate-900 group whitespace-nowrap shrink-0"
+            href="#top"
+            onClick={handleBrandClick}
+            className="flex items-center gap-3 text-slate-900 group whitespace-nowrap shrink-0 cursor-pointer"
             aria-label="TRUST CODE SYSTEM Home"
           >
-            <div className="w-8 h-8 rounded-sm bg-[#14243A] text-white flex items-center justify-center font-bold text-xs tracking-widest shadow-xs group-hover:bg-[#2457A7] transition-colors">
-              <Grid className="w-4 h-4 text-[#D9A65A]" />
+            <div className="relative w-9 h-9 flex items-center justify-center shrink-0">
+              <Image
+                src={theme.media.logo}
+                alt="TCSweREAL Logo"
+                width={36}
+                height={36}
+                className="w-9 h-9 object-contain"
+                priority
+              />
             </div>
             <span className="font-bold tracking-tight text-lg sm:text-xl text-[#14243A]">
               {theme.brand.name}
@@ -73,7 +98,8 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
               <a
                 key={link.label}
                 href={link.href}
-                className="hover:text-[#2457A7] transition-colors whitespace-nowrap shrink-0 relative py-1"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="hover:text-[#2457A7] transition-colors whitespace-nowrap shrink-0 relative py-1 cursor-pointer"
               >
                 {link.label}
               </a>
@@ -96,7 +122,7 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-              className="p-2 text-[#14243A] hover:text-[#2457A7] focus:outline-hidden"
+              className="p-2 text-[#14243A] hover:text-[#2457A7] focus:outline-hidden cursor-pointer"
               aria-label={mobileMenuOpen ? 'Close menu' : 'Open menu'}
               aria-expanded={mobileMenuOpen}
             >
@@ -114,19 +140,16 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
               <a
                 key={link.label}
                 href={link.href}
-                onClick={() => setMobileMenuOpen(false)}
-                className="px-3 py-2 text-sm font-medium text-[#14243A] hover:bg-[#F7F8FA] hover:text-[#2457A7] rounded-sm transition-colors"
+                onClick={(e) => handleNavClick(e, link.href)}
+                className="px-3 py-2 text-sm font-medium text-[#14243A] hover:bg-[#F7F8FA] hover:text-[#2457A7] rounded-sm transition-colors cursor-pointer"
               >
                 {link.label}
               </a>
             ))}
             <div className="pt-3 border-t border-[#E4E8EF]">
               <button
-                onClick={(e) => {
-                  setMobileMenuOpen(false);
-                  handleCtaClick(e);
-                }}
-                className="w-full flex items-center justify-center gap-2 px-4 py-3 text-xs font-semibold text-white bg-[#14243A] hover:bg-[#2457A7] rounded-sm transition-colors shadow-xs"
+                onClick={handleCtaClick}
+                className="w-full flex items-center justify-center gap-2 px-4 py-3 text-xs font-semibold text-white bg-[#14243A] hover:bg-[#2457A7] rounded-sm transition-colors shadow-xs cursor-pointer"
               >
                 <span>Explore Investment Opportunity</span>
                 <ArrowUpRight className="w-4 h-4 text-[#D9A65A]" />

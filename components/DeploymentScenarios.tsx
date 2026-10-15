@@ -1,8 +1,10 @@
 'use client';
 
 import React, { useState } from 'react';
+import Image from 'next/image';
+import { theme } from '@/src/config/theme';
 import { DEPLOYMENT_SCENARIOS } from '@/lib/data';
-import { Layers, Check, ArrowRight, ShieldCheck, Clock, Users, Building2 } from 'lucide-react';
+import { Layers, Check, ArrowRight, ShieldCheck, Clock, Users, Building2, Map } from 'lucide-react';
 
 export function DeploymentScenarios() {
   const [selectedScenarioId, setSelectedScenarioId] = useState<string>('scenario-b');
@@ -10,7 +12,7 @@ export function DeploymentScenarios() {
   const selected = DEPLOYMENT_SCENARIOS.find((s) => s.id === selectedScenarioId) || DEPLOYMENT_SCENARIOS[1];
 
   return (
-    <section id="scenarios" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF]">
+    <section id="scenarios" className="py-20 bg-[#F7F8FA] border-b border-[#E4E8EF] scroll-mt-20 lg:scroll-mt-24">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-3xl mb-12">
@@ -25,6 +27,50 @@ export function DeploymentScenarios() {
           <p className="text-base sm:text-lg text-[#657184] leading-relaxed">
             The system adapts to diverse venue topologies, crowd densities, and commercial objectives—from focused single-stage regional activations to multi-zone international festival ecosystems.
           </p>
+        </div>
+
+        {/* Actual Proposed Master Event Map Showcase */}
+        <div className="mb-10 bg-white border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-4 mb-4 border-b border-[#E4E8EF] gap-2">
+            <div>
+              <div className="flex items-center gap-2 text-xs font-semibold uppercase tracking-wider text-[#2457A7]">
+                <Map className="w-3.5 h-3.5" />
+                <span>Master Site Integration Plan</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold text-[#14243A] mt-0.5">
+                Actual Proposed Event Site Map: Coachella Venue &amp; Perimeter Layout
+              </h3>
+            </div>
+            <span className="text-xs font-mono font-bold text-[#D9A65A] bg-[#FAF4EB] border border-[#D9A65A]/40 px-3 py-1 rounded-2xs self-start sm:self-auto">
+              PROPOSED MASTER CADASTRE
+            </span>
+          </div>
+
+          <div className="relative aspect-16/9 w-full rounded-2xs overflow-hidden border border-[#E4E8EF] mb-4 bg-[#F7F8FA]">
+            <Image
+              src={theme.media.eventMapImage}
+              alt="TRUST CODE SYSTEM - Actual Proposed Event Site Map: Coachella Venue, Camping, Parking & Access Layout"
+              fill
+              className="object-contain"
+              sizes="(max-width: 1280px) 100vw, 1200px"
+              referrerPolicy="no-referrer"
+            />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-xs text-[#657184] pt-2">
+            <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs">
+              <span className="font-bold text-[#14243A] block mb-1">Venue Core Commercial Ring:</span>
+              Modular retail and hospitality pods stationed along main concourses (Outdoor Theatre, Mojave, Gobi, Rose Garden VIP).
+            </div>
+            <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs">
+              <span className="font-bold text-[#14243A] block mb-1">Perimeter &amp; Avenue Corridors:</span>
+              Connected panel barriers with internal utility conduit lines routed along Avenue 49 to Avenue 52.
+            </div>
+            <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs">
+              <span className="font-bold text-[#14243A] block mb-1">Camping &amp; Essential Services:</span>
+              24/7 modular convenience store pods and sanitation modules servicing zones 1A through 15D.
+            </div>
+          </div>
         </div>
 
         {/* Scenario Switcher Tabs */}

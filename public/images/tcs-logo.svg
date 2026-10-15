@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <!-- Transparent / White Background -->
+  <rect width="500" height="500" fill="transparent"/>
+  
+  <!-- Outer Black Rounded Diamond Frame -->
+  <rect x="90" y="90" width="320" height="320" rx="44" ry="44" 
+        transform="rotate(45 250 250)" 
+        fill="#FFFFFF" 
+        stroke="#111827" 
+        stroke-width="16"/>
+
+  <!-- Inner Tiles Group (Centered at 250, 250) -->
+  <g id="tiles">
+    <!-- Top Tile: Vibrant Red-Orange -->
+    <path d="M 250 96 
+             L 326 172 
+             A 12 12 0 0 1 326 188 
+             L 282 232 
+             A 10 10 0 0 1 268 232 
+             L 232 232 
+             A 10 10 0 0 1 218 232 
+             L 174 188 
+             A 12 12 0 0 1 174 172 
+             Z" 
+          fill="#F23B10" />
+
+    <!-- Left Tile: Fresh Leaf Green -->
+    <path d="M 96 250 
+             L 172 174 
+             A 12 12 0 0 1 188 174 
+             L 232 218 
+             A 10 10 0 0 1 232 232 
+             L 232 268 
+             A 10 10 0 0 1 232 282 
+             L 188 326 
+             A 12 12 0 0 1 172 326 
+             Z" 
+          fill="#7CB518" />
+
+    <!-- Bottom Tile: Vibrant Cobalt Sky Blue -->
+    <path d="M 250 404 
+             L 174 328 
+             A 12 12 0 0 1 174 312 
+             L 218 268 
+             A 10 10 0 0 1 232 268 
+             L 268 268 
+             A 10 10 0 0 1 282 268 
+             L 326 312 
+             A 12 12 0 0 1 326 328 
+             Z" 
+          fill="#3E83E4" />
+
+    <!-- Right Tile: Refined Medium Gray -->
+    <path d="M 404 250 
+             L 328 326 
+             A 12 12 0 0 1 312 326 
+             L 268 282 
+             A 10 10 0 0 1 268 268 
+             L 268 232 
+             A 10 10 0 0 1 268 218 
+             L 312 174 
+             A 12 12 0 0 1 328 174 
+             Z" 
+          fill="#8D96A3" />
+
+    <!-- Center Yellow / Gold Diamond Tile -->
+    <rect x="194" y="194" width="112" height="112" rx="16" ry="16" 
+          transform="rotate(45 250 250)" 
+          fill="#FAB812" />
+
+    <!-- Center Text: TCSweREAL™ -->
+    <text x="247" y="259" 
+          font-family="system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif" 
+          font-size="28" 
+          font-weight="900" 
+          letter-spacing="-0.5" 
+          text-anchor="middle" 
+          fill="#111827">TCS<tspan font-weight="700">weREAL</tspan><tspan font-size="14" dy="-10" font-weight="900">™</tspan></text>
+  </g>
+</svg>

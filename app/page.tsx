@@ -31,7 +31,7 @@ export default function HomePage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-[#14243A] selection:bg-[#EDF3FC] selection:text-[#2457A7]">
+    <div id="top" className="min-h-screen bg-white text-[#14243A] selection:bg-[#EDF3FC] selection:text-[#2457A7]">
       {/* 1. Navigation */}
       <Navbar onOpenInquiry={handleInquirySelect} />
 
