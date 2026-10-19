@@ -32,7 +32,7 @@ export function HeroSection() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center mb-16">
           {/* Left Column: Core Positioning & CTAs */}
           <div className="lg:col-span-6 flex flex-col justify-center">
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-[#14243A] leading-[1.08] mb-4 text-balance">
+            <h1 className="text-4xl sm:text-5xl lg:text-5xl font-extrabold tracking-tight text-[#14243A] leading-[1.08] mb-4 text-balance">
               EVERY INCH MATTERS.
             </h1>
 
@@ -74,7 +74,7 @@ export function HeroSection() {
           <div className="lg:col-span-6 relative">
             <div className="relative rounded-sm overflow-hidden border border-[#E4E8EF] shadow-md bg-[#F7F8FA]">
               <div className="relative aspect-16/9 sm:aspect-16/10 w-full">
-                <Image
+                {/* <Image
                   src={theme.media.stageImage}
                   alt="TRUST CODE SYSTEM - Super Coachella Vision Stage & Perimeter Architecture"
                   fill
@@ -82,7 +82,15 @@ export function HeroSection() {
                   className="object-cover"
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   referrerPolicy="no-referrer"
-                />
+                /> */}
+                <iframe
+                    src={theme.media.visionVideoUrl}
+                    title="TRUST CODE SYSTEM - Modular Event Perimeter Vision Video"
+                    className="w-full h-full border-0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                    loading="lazy"
+                  />
                 {/* Subtle scrim to preserve contrast */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#14243A]/40 via-transparent to-transparent pointer-events-none" />
 
@@ -114,7 +122,7 @@ export function HeroSection() {
         {/* 4-Stat Full-Width Proof Strip */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6 pt-8 border-t border-[#E4E8EF]">
           <div className="p-4 sm:p-5 bg-white border border-[#E4E8EF] rounded-sm shadow-2xs">
-            <div className="text-2xl sm:text-3xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
+            <div className="text-xl sm:text-xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
               $200M–$500M
             </div>
             <div className="text-xs font-semibold text-[#2457A7] mt-1 uppercase tracking-wide">
@@ -126,7 +134,7 @@ export function HeroSection() {
           </div>
 
           <div className="p-4 sm:p-5 bg-white border border-[#E4E8EF] rounded-sm shadow-2xs">
-            <div className="text-2xl sm:text-3xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
+            <div className="text-xl sm:text-xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
               100% Modular
             </div>
             <div className="text-xs font-semibold text-[#2457A7] mt-1 uppercase tracking-wide">
@@ -138,8 +146,8 @@ export function HeroSection() {
           </div>
 
           <div className="p-4 sm:p-5 bg-white border border-[#E4E8EF] rounded-sm shadow-2xs">
-            <div className="text-2xl sm:text-3xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
-              7 Monetization
+            <div className="text-xl sm:text-xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
+              Multi-revenue system
             </div>
             <div className="text-xs font-semibold text-[#2457A7] mt-1 uppercase tracking-wide">
               Distinct Revenue Streams
@@ -150,7 +158,7 @@ export function HeroSection() {
           </div>
 
           <div className="p-4 sm:p-5 bg-white border border-[#E4E8EF] rounded-sm shadow-2xs">
-            <div className="text-2xl sm:text-3xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
+            <div className="text-xl sm:text-xl font-extrabold text-[#14243A] tabular-nums tracking-tight">
               360° Perimeter
             </div>
             <div className="text-xs font-semibold text-[#2457A7] mt-1 uppercase tracking-wide">

@@ -61,6 +61,8 @@ export const theme = {
     logo: '/images/tcs-logo.svg',
     stageImage: '/images/stage_super_coachella.jpg',
     containerCafeImage: '/images/container_custom_cafe.jpg',
+    container: '/images/container.jpg',
+    tcsmap: '/images/tcs-map.jpg',
     modelRepresentativeImage: '/images/model_representative.jpg',
     eventMapImage: '/images/tcs_event_site_map.jpg',
     heroImage: '/images/stage_super_coachella.jpg',

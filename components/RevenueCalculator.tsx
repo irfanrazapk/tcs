@@ -114,10 +114,10 @@ export function RevenueCalculator() {
         </div>
 
         {/* Interactive Calculator Section */}
-        <div id="calculator" className="bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs scroll-mt-20 lg:scroll-mt-24">
+        {/* <div id="calculator" className="bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm p-6 sm:p-8 shadow-xs scroll-mt-20 lg:scroll-mt-24"> */}
           {/* Controls Bar */}
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-[#E4E8EF] gap-4">
-            <div>
+          {/* <div className="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b border-[#E4E8EF] gap-4"> */}
+            {/* <div>
               <div className="flex items-center gap-2">
                 <Calculator className="w-5 h-5 text-[#2457A7]" />
                 <h3 className="text-lg font-bold text-[#14243A]">
@@ -127,10 +127,10 @@ export function RevenueCalculator() {
               <p className="text-xs text-[#657184] mt-0.5">
                 Adjust key operating assumptions to model illustrative gross revenue potential.
               </p>
-            </div>
+            </div> */}
 
             {/* Presets */}
-            <div className="flex flex-wrap items-center gap-2">
+            {/* <div className="flex flex-wrap items-center gap-2">
               <span className="text-[11px] font-semibold text-[#657184] uppercase tracking-wide">
                 Presets:
               </span>
@@ -155,15 +155,15 @@ export function RevenueCalculator() {
               >
                 Scaled Fleet Target
               </button>
-            </div>
-          </div>
+            </div> */}
+          {/* </div> */}
 
           {/* Calculator Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+          {/* <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start"> */}
             {/* Left Column: Sliders & Inputs (7 Cols) */}
-            <div className="lg:col-span-7 flex flex-col gap-6">
+            {/* <div className="lg:col-span-7 flex flex-col gap-6"> */}
               {/* Input 1: Number of events per year */}
-              <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
+              {/* <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
                 <div className="flex items-center justify-between mb-2">
                   <label className="text-xs font-bold text-[#14243A] flex items-center gap-1.5">
                     <Calendar className="w-3.5 h-3.5 text-[#2457A7]" />
@@ -187,10 +187,10 @@ export function RevenueCalculator() {
                   <span>30 (Standard Season)</span>
                   <span>100 (Multi-Region Fleet)</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Input 2: Average monetizable units per event */}
-              <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
+              {/* <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
                 <div className="flex items-center justify-between mb-2">
                   <label className="text-xs font-bold text-[#14243A] flex items-center gap-1.5">
                     <Layers className="w-3.5 h-3.5 text-[#2457A7]" />
@@ -214,10 +214,10 @@ export function RevenueCalculator() {
                   <span>40 (Perimeter Ring)</span>
                   <span>100 (Full 360° Grid)</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Input 3: Average gross revenue per unit per event */}
-              <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
+              {/* <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
                 <div className="flex items-center justify-between mb-2">
                   <label className="text-xs font-bold text-[#14243A] flex items-center gap-1.5">
                     <DollarSign className="w-3.5 h-3.5 text-[#2457A7]" />
@@ -241,10 +241,10 @@ export function RevenueCalculator() {
                   <span>$55,000 (Blended Retail/F&amp;B)</span>
                   <span>$120,000 (VIP/Title Sponsor)</span>
                 </div>
-              </div>
+              </div> */}
 
               {/* Input 4: Additional annual gross revenue from deployment/sponsorship */}
-              <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
+              {/* <div className="p-4 bg-white border border-[#E4E8EF] rounded-sm">
                 <div className="flex items-center justify-between mb-2">
                   <label className="text-xs font-bold text-[#14243A] flex items-center gap-1.5">
                     <TrendingUp className="w-3.5 h-3.5 text-[#2457A7]" />
@@ -268,13 +268,14 @@ export function RevenueCalculator() {
                   <span>$15M (Enterprise Retainers)</span>
                   <span>$50M (Scaled Media Network)</span>
                 </div>
-              </div>
-            </div>
+              </div> */}
+
+            {/* </div> */}
 
             {/* Right Column: Calculated Output Card (5 Cols) */}
-            <div className="lg:col-span-5 bg-white border border-[#E4E8EF] p-6 rounded-sm shadow-xs flex flex-col justify-between">
-              <div>
-                <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#E4E8EF]">
+            {/* <div className="lg:col-span-5 bg-white border border-[#E4E8EF] p-6 rounded-sm shadow-xs flex flex-col justify-between"> */}
+              {/* <div> */}
+                {/* <div className="flex items-center justify-between pb-3 mb-4 border-b border-[#E4E8EF]">
                   <span className="text-[11px] font-bold text-[#657184] uppercase tracking-wider">
                     Modeled Output
                   </span>
@@ -302,11 +303,11 @@ export function RevenueCalculator() {
                       Multi-Year Ramp
                     </button>
                   </div>
-                </div>
+                </div> */}
 
-                {projectionHorizon === 'annual' ? (
-                  <div>
-                    <div className="text-xs font-semibold text-[#2457A7] uppercase tracking-wide">
+                {/* {projectionHorizon === 'annual' ? ( */}
+                  {/* <div> */}
+                    {/* <div className="text-xs font-semibold text-[#2457A7] uppercase tracking-wide">
                       Annual Gross Revenue Opportunity
                     </div>
                     <div className="text-3xl sm:text-4xl font-extrabold text-[#14243A] tracking-tight tabular-nums mt-1 mb-2">
@@ -314,10 +315,10 @@ export function RevenueCalculator() {
                     </div>
                     <p className="text-[11px] text-[#657184] leading-relaxed mb-6">
                       Illustrative gross commercial potential across {eventsPerYear} events with {unitsPerEvent} units per event, before operating and capital deductions.
-                    </p>
+                    </p> */}
 
                     {/* Breakdown Math */}
-                    <div className="space-y-3 pt-4 border-t border-[#E4E8EF] text-xs">
+                    {/* <div className="space-y-3 pt-4 border-t border-[#E4E8EF] text-xs">
                       <div className="flex justify-between items-center text-[#657184]">
                         <span>Unit Commercial Gross ({eventsPerYear} × {unitsPerEvent} @ ${avgRevenuePerUnit.toLocaleString()}):</span>
                         <span className="font-mono font-semibold text-[#14243A]">
@@ -336,18 +337,18 @@ export function RevenueCalculator() {
                           {formatCurrency(totalAnnualGrossOpportunity)}
                         </span>
                       </div>
-                    </div>
-                  </div>
-                ) : (
-                  <div>
-                    <div className="text-xs font-semibold text-[#2457A7] uppercase tracking-wide">
+                    </div> */}
+                  {/* </div> */}
+                {/* ) : ( */}
+                  {/* <div> */}
+                    {/* <div className="text-xs font-semibold text-[#2457A7] uppercase tracking-wide">
                       Multi-Year Fleet Deployment Ramp
                     </div>
                     <p className="text-[11px] text-[#657184] mb-4">
                       Illustrative growth trajectory across 5 years of modular asset expansion:
-                    </p>
+                    </p> */}
 
-                    <div className="space-y-3">
+                    {/* <div className="space-y-3">
                       <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs">
                         <div className="flex justify-between text-xs font-bold text-[#14243A]">
                           <span>Year 1 (Pilot Hub):</span>
@@ -383,23 +384,32 @@ export function RevenueCalculator() {
                           {eventsPerYear} events · {unitsPerEvent} units/event
                         </div>
                       </div>
-                    </div>
-                  </div>
-                )}
-              </div>
+                    </div> */}
+                  {/* </div> */}
+                {/* )} */}
+              {/* </div> */}
 
               {/* Operating Cost Deductions Box */}
-              <div className="mt-6 pt-4 border-t border-[#E4E8EF] bg-[#F7F8FA] p-3 rounded-2xs text-[11px] text-[#657184]">
+              {/* <div className="mt-6 pt-4 border-t border-[#E4E8EF] bg-[#F7F8FA] p-3 rounded-2xs text-[11px] text-[#657184]">
                 <div className="font-semibold text-[#14243A] mb-1">
                   Operating Cost &amp; Net Realization Reminder:
                 </div>
                 <p className="leading-tight">
                   Gross revenue is before operating expenses, transport logistics, crane rigging, on-site labor, asset maintenance, insurance, partner revenue shares, and taxes. Detailed unit-level margin waterfall provided in investor discussions.
                 </p>
-              </div>
-            </div>
-          </div>
-        </div>
+              </div> */}
+
+
+            {/* </div> */}
+
+
+
+          {/* </div> */}
+
+
+        {/* </div> */}
+
+
       </div>
     </section>
   );

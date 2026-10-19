@@ -48,7 +48,7 @@ export function DeploymentScenarios() {
 
           <div className="relative aspect-16/9 w-full rounded-2xs overflow-hidden border border-[#E4E8EF] mb-4 bg-[#F7F8FA]">
             <Image
-              src={theme.media.eventMapImage}
+              src={theme.media.tcsmap}
               alt="TRUST CODE SYSTEM - Actual Proposed Event Site Map: Coachella Venue, Camping, Parking & Access Layout"
               fill
               className="object-contain"

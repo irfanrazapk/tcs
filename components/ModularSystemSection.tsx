@@ -49,7 +49,7 @@ export function ModularSystemSection() {
           <div className="relative rounded-sm overflow-hidden border border-[#E4E8EF] shadow-sm bg-[#F7F8FA]">
             <div className="relative aspect-16/9 w-full">
               <Image
-                src={theme.media.containerCafeImage}
+                src={theme.media.container}
                 alt="TRUST CODE SYSTEM - Actual Assembled Container Pod Architecture with Café & Digital Perimeter Screens"
                 fill
                 className="object-cover"

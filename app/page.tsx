@@ -61,10 +61,10 @@ export default function HomePage() {
         <DeploymentScenarios />
 
         {/* 10. Embedded Vision Video */}
-        <VisionVideoSection />
+        {/* <VisionVideoSection /> */}
 
         {/* 11. Why Investors May Be Interested */}
-        <InvestorThesisSection />
+        {/* <InvestorThesisSection /> */}
 
         {/* 12. Go-to-Market Strategy */}
         <GoToMarketTimeline />

@@ -51,7 +51,7 @@ export const SYSTEM_COMPONENTS = [
     description:
       'Interlocking architectural panel systems that form a secure, aesthetically cohesive perimeter while accommodating audience movement channels, integrated back-of-house utility conduit passages, and regulated acoustic dampening.',
     specs: [
-      'Integrated cable management and high-voltage raceways',
+      'Convenience to the customer, easy access to high-speed satellite internet ',
       'Acoustic-rated modular infill and architectural claddings',
       'Wind-load certified ballast foundation options',
       'Quick-couple mechanical locking joints',
@@ -112,7 +112,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Sanitary, code-compliant commercial food service pods engineered with grease-trapping conduits, high-capacity cold storage, and dual-window POS queuing.',
     commercialOpportunity:
       'Concessionaire rental fees, percentage-of-gross revenue sharing, and beverage vendor exclusivity contracts.',
-    image: '/images/container_custom_cafe.jpg',
+    image: '/images/container.jpg',
     capabilities: [
       'Health department approved stainless surfaces',
       'High-capacity potable water and graywater connections',
@@ -184,7 +184,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Connected digital perimeter panels providing schedule updates, festival wayfinding, emergency safety alerts, and monetizable dynamic digital advertising.',
     commercialOpportunity:
       'Programmatic digital ad rotations, sponsor screen takeovers, and media network revenue-sharing.',
-    image: '/images/stage_super_coachella.jpg',
+    image: '/images/stage.jpg',
     capabilities: [
       'High-brightness daylight-viewable LED screens',
       'Dynamic programmatic ad scheduler',

@@ -250,7 +250,7 @@ export function InvestorContactForm({
                   />
                 </div>
 
-                <div>
+                {/* <div>
                   <label htmlFor="projectScale" className="block text-xs font-bold text-[#14243A] mb-1.5">
                     Estimated Project Scale or Investment Range <span className="text-[#8E99A8] font-normal">(Optional)</span>
                   </label>
@@ -268,7 +268,8 @@ export function InvestorContactForm({
                     <option value="Commercial Tenant / Brand Activation Partnership">Commercial Tenant / Brand Activation Partnership</option>
                     <option value="General Exploration">General Exploration</option>
                   </select>
-                </div>
+                </div> */}
+
               </div>
 
               {/* Message */}
