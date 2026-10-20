@@ -94,7 +94,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Transform event perimeters into prominent brand showcases, product tasting hubs, and interactive partner pavilions that offer marquee exposure along primary audience arteries.',
     commercialOpportunity:
       'Premium brand activation rights, title sponsor naming packages, and multi-day experiential lease contracts.',
-    image: '/images/hospitality_retail_activation.jpg',
+    image: '/images/stage4pods.jpg',
     capabilities: [
       'Custom exterior architectural wraps',
       'High-traffic sampling and product demo counters',

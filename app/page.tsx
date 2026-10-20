@@ -1,86 +1,85 @@
-'use client';
 
-import React, { useState } from 'react';
-import { Navbar } from '@/components/Navbar';
-import { HeroSection } from '@/components/HeroSection';
-import { OpportunitySection } from '@/components/OpportunitySection';
-import { ModularSystemSection } from '@/components/ModularSystemSection';
-import { SolutionsGrid } from '@/components/SolutionsGrid';
-import { BusinessModelSection } from '@/components/BusinessModelSection';
-import { RevenueStreamsSection } from '@/components/RevenueStreamsSection';
-import { RevenueCalculator } from '@/components/RevenueCalculator';
-import { DeploymentScenarios } from '@/components/DeploymentScenarios';
-import { VisionVideoSection } from '@/components/VisionVideoSection';
-import { InvestorThesisSection } from '@/components/InvestorThesisSection';
-import { GoToMarketTimeline } from '@/components/GoToMarketTimeline';
-import { CapitalDeploymentSection } from '@/components/CapitalDeploymentSection';
-import { InvestorContactForm } from '@/components/InvestorContactForm';
-import { Footer } from '@/components/Footer';
+import Link from 'next/link';
 
 export default function HomePage() {
-  const [selectedInquiryType, setSelectedInquiryType] = useState<string>('Investor');
-  const [inquiryPresetMessage, setInquiryPresetMessage] = useState<string>('');
-
-  const handleInquirySelect = (type?: string, presetMessage?: string) => {
-    if (type) {
-      setSelectedInquiryType(type);
-    }
-    if (presetMessage) {
-      setInquiryPresetMessage(presetMessage);
-    }
-  };
-
   return (
-    <div id="top" className="min-h-screen bg-white text-[#14243A] selection:bg-[#EDF3FC] selection:text-[#2457A7]">
-      {/* 1. Navigation */}
-      <Navbar onOpenInquiry={handleInquirySelect} />
+    <main className="min-h-screen bg-white text-[#14243A] flex items-center justify-center px-6 py-16">
+      <div className="w-full max-w-5xl mx-auto">
 
-      <main id="main-content">
-        {/* 2. Hero — Every Inch Matters */}
-        <HeroSection />
+        {/* Header */}
+        <div className="text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
+            TRUST CODE SYSTEM
+          </h1>
 
-        {/* 3. The Opportunity */}
-        <OpportunitySection />
+          <p className="mt-4 text-lg text-gray-600">
+            Choose a business division to explore
+          </p>
+        </div>
 
-        {/* 4. Modular Event Perimeter System */}
-        <ModularSystemSection />
+        {/* Business Options */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-        {/* 5. The Ecosystem — More Than Containers */}
-        <SolutionsGrid />
+          {/* Trust Code System */}
+          <Link
+            href="/trust-code-system"
+            className="group rounded-2xl border border-gray-200 p-8 md:p-10
+            transition-all duration-300 hover:border-[#2457A7]
+            hover:shadow-xl"
+          >
+            <div className="mb-6 flex h-14 w-14 items-center justify-center
+              rounded-xl bg-[#EDF3FC] text-2xl text-[#2457A7]">
+              T
+            </div>
 
-        {/* 6. How the Business Model Works */}
-        <BusinessModelSection />
+            <h2 className="text-2xl font-bold">
+              Trust Code System
+            </h2>
 
-        {/* 7. Revenue Streams */}
-        <RevenueStreamsSection />
+            <p className="mt-4 leading-7 text-gray-600">
+              Discover our business solutions, modular systems, and
+              investment opportunities.
+            </p>
 
-        {/* 8. The $200M–$500M Potential Gross Revenue Opportunity & Calculator */}
-        <RevenueCalculator />
+            <span className="mt-8 inline-block font-semibold text-[#2457A7]">
+              Explore Trust Code System →
+            </span>
+          </Link>
 
-        {/* 9. Illustrative Deployment Scenarios */}
-        <DeploymentScenarios />
+          {/* Trust Code System Entertainments */}
+          <Link
+            href="/entertainments"
+            className="group rounded-2xl border border-gray-200 p-8 md:p-10
+            transition-all duration-300 hover:border-[#2457A7]
+            hover:shadow-xl"
+          >
+            <div className="mb-6 flex h-14 w-14 items-center justify-center
+              rounded-xl bg-[#EDF3FC] text-2xl text-[#2457A7]">
+              E
+            </div>
 
-        {/* 10. Embedded Vision Video */}
-        {/* <VisionVideoSection /> */}
+            <h2 className="text-2xl font-bold">
+              Trust Code System Entertainments
+            </h2>
 
-        {/* 11. Why Investors May Be Interested */}
-        {/* <InvestorThesisSection /> */}
+            <p className="mt-4 leading-7 text-gray-600">
+              Explore our entertainment division, event experiences,
+              and related business opportunities.
+            </p>
 
-        {/* 12. Go-to-Market Strategy */}
-        <GoToMarketTimeline />
+            <span className="mt-8 inline-block font-semibold text-[#2457A7]">
+              Explore Entertainments →
+            </span>
+          </Link>
 
-        {/* 13. Capital Deployment & Investor Discussion */}
-        <CapitalDeploymentSection onSelectInquiryType={handleInquirySelect} />
+        </div>
 
-        {/* 14. Contact & Investor Inquiry */}
-        <InvestorContactForm
-          initialInquiryType={selectedInquiryType}
-          initialMessage={inquiryPresetMessage}
-        />
-      </main>
+        {/* Footer */}
+        <p className="mt-12 text-center text-sm text-gray-500">
+          © {new Date().getFullYear()} Trust Code System. All rights reserved.
+        </p>
 
-      {/* 15. Footer */}
-      <Footer />
-    </div>
+      </div>
+    </main>
   );
 }
