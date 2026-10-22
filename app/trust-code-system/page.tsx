@@ -8,7 +8,7 @@ export default function ComingSoon() {
         <div className="logo">YOUR BRAND</div>
 
         <h1>
-          Something Great Is <span>Coming Soon.</span>
+          Something Great is <span>Coming Soon.</span>
         </h1>
 
         <p>
