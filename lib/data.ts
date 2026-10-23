@@ -75,7 +75,7 @@ export const SYSTEM_COMPONENTS = [
     title: 'Rapid Flexible Deployment',
     tag: 'Operational Fleet',
     description:
-      'Engineered for rapid mobilization and demobilization. Units deploy via standard flatbed freight and crane/telehandler rigging, drastically reducing site footprint, setup labor, and venue teardown penalties.',
+      'Engineered for rapid mobilization and demobilization. Units deploy via standard flatbed freight and crane/telehandler rigging, drastically reducing site footprint  setup & labor.',
     specs: [
       'Rapid deployment timeline per cluster',
       'Minimized ground-impact footprint for turf preservation',
@@ -109,7 +109,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
     title: 'Food & Beverage',
     headline: 'Turnkey Concession Pods & Craft Beverage Bars',
     description:
-      'Sanitary, code-compliant commercial food service pods engineered with grease-trapping conduits, high-capacity cold storage, and dual-window POS queuing.',
+      'Sanitary, code-compliant commercial food service pods engineered with grease-trapping conduits, high-capacity & cold storage.',
     commercialOpportunity:
       'Concessionaire rental fees, percentage-of-gross revenue sharing, and beverage vendor exclusivity contracts.',
     image: '/images/container.jpg',
@@ -145,10 +145,10 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
     title: 'Premium Hospitality',
     headline: 'Elevated VIP Lounges, Viewing Decks & Sponsor Suites',
     description:
-      'Multi-level architectural pods featuring second-story observation decks, private cocktail lounges, and VIP guest amenities situated at optimal vantage points.',
+      'Multi-level architectural pods featuring private cocktail lounges, and VIP guest amenities situated at optimal vantage points.',
     commercialOpportunity:
       'High-tier VIP ticket surcharges, corporate entertaining packages, and premium hospitality operator leases.',
-    image: '/images/hospitality_retail_activation.jpg',
+    image: '/images/vip-lounge.jpg',
     capabilities: [
       'Upper-deck balustrades with crowd vantage sightlines',
       'Air-conditioned VIP lounge interiors',
@@ -163,10 +163,10 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
     title: 'Washrooms & Essential Services',
     headline: 'High-Density Sanitation & Operational Command Pods',
     description:
-      'Purpose-built luxury vacuum-flush washroom pods, medical triage stations, security hubs, and lost-and-found guest relations depots along the perimeter boundary.',
+      'Purpose-built luxury washroom pods, medical triage stations, security hubs, and lost-and-found guest relations depots along the perimeter boundary.',
     commercialOpportunity:
       'Infrastructure service service-level fees, venue operational contracts, and sponsored comfort station integrations.',
-    image: '/images/essential_services_pod.jpg',
+    image: '/images/high-density.jpg',
     capabilities: [
       'Water-saving vacuum flush infrastructure',
       'Continuous HVAC and touchless hygiene fixtures',
@@ -181,7 +181,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
     title: 'Media & Digital Experiences',
     headline: 'Out-of-Home Digital Panels & Information Corridors',
     description:
-      'Connected digital perimeter panels providing schedule updates, festival wayfinding, emergency safety alerts, and monetizable dynamic digital advertising.',
+      'Connected digital perimeter panels providing schedule updates, festival wayfinding, emergency safety alerts, and dynamic digital advertising.',
     commercialOpportunity:
       'Programmatic digital ad rotations, sponsor screen takeovers, and media network revenue-sharing.',
     image: '/images/stage.jpg',

@@ -60,14 +60,14 @@ export function SolutionsGrid() {
                     {sol.description}
                   </p>
 
-                  <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs mb-4">
+                  {/* <div className="p-3 bg-[#F7F8FA] border border-[#E4E8EF] rounded-2xs mb-4">
                     <div className="text-[10px] font-bold uppercase tracking-wider text-[#2457A7] mb-1">
                       Commercial Opportunity
                     </div>
                     <div className="text-xs text-[#14243A] font-medium leading-relaxed">
                       {sol.commercialOpportunity}
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
 

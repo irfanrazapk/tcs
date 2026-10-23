@@ -7,7 +7,7 @@
 
 export const theme = {
   brand: {
-    name: 'TRUST CODE SYSTEM',
+    name: 'Modular Event Perimeter System',
     shortName: 'TCSweREAL',
     productName: 'Modular Event Perimeter System',
     tagline: 'Every Inch Matters.',

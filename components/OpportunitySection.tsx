@@ -182,7 +182,7 @@ export function OpportunitySection() {
                   Marquee Brand &amp; VIP Venues
                 </h4>
                 <p className="text-xs text-[#657184] leading-relaxed">
-                  Creates premium two-story VIP lounges and immersive sponsor destinations without cannibalizing central stage crowd capacity.
+                  Creates premium VIP lounges and immersive sponsor destinations without cannibalizing central stage crowd capacity.
                 </p>
               </div>
             </div>

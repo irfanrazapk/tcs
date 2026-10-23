@@ -52,7 +52,7 @@ export default function HomePage() {
         <BusinessModelSection />
 
         {/* 7. Revenue Streams */}
-        <RevenueStreamsSection />
+        {/* <RevenueStreamsSection /> */}
 
         {/* 8. The $200M–$500M Potential Gross Revenue Opportunity & Calculator */}
         <RevenueCalculator />
@@ -67,10 +67,10 @@ export default function HomePage() {
         {/* <InvestorThesisSection /> */}
 
         {/* 12. Go-to-Market Strategy */}
-        <GoToMarketTimeline />
+        {/* <GoToMarketTimeline /> */}
 
         {/* 13. Capital Deployment & Investor Discussion */}
-        <CapitalDeploymentSection onSelectInquiryType={handleInquirySelect} />
+        {/* <CapitalDeploymentSection onSelectInquiryType={handleInquirySelect} /> */}
 
         {/* 14. Contact & Investor Inquiry */}
         <InvestorContactForm

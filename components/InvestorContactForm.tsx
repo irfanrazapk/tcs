@@ -80,7 +80,7 @@ export function InvestorContactForm({
           fullName,
           company,
           businessEmail,
-          inquiryType,
+          // inquiryType,
           projectScale: projectScale || undefined,
           message,
           consent,
@@ -180,7 +180,7 @@ export function InvestorContactForm({
                 <label className="block text-xs font-bold text-[#14243A] uppercase tracking-wider mb-2.5">
                   Inquiry Type <span className="text-red-500">*</span>
                 </label>
-                <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                {/* <div className="grid grid-cols-2 sm:grid-cols-3 gap-2">
                   {inquiryOptions.map((type) => (
                     <button
                       key={type}
@@ -195,7 +195,7 @@ export function InvestorContactForm({
                       {type}
                     </button>
                   ))}
-                </div>
+                </div> */}
               </div>
 
               {/* Row: Name and Company */}

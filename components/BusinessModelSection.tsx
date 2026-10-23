@@ -32,11 +32,11 @@ export function BusinessModelSection() {
         </div>
 
         {/* Visual Flow Chain */}
-        <div className="mb-16 p-6 sm:p-8 bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm">
-          <div className="text-xs font-bold text-[#14243A] uppercase tracking-wider mb-4">
+        {/* <div className="mb-16 p-6 sm:p-8 bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm"> */}
+          {/* <div className="text-xs font-bold text-[#14243A] uppercase tracking-wider mb-4">
             The Value Acceleration Pipeline
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
+          </div> */}
+          {/* <div className="grid grid-cols-1 md:grid-cols-5 gap-3 relative">
             {flowNodes.map((node, idx) => (
               <div key={idx} className="flex flex-col md:flex-row items-center gap-3">
                 <div className="w-full p-4 bg-white border border-[#E4E8EF] rounded-sm shadow-2xs text-center flex flex-col items-center">
@@ -58,12 +58,12 @@ export function BusinessModelSection() {
                 )}
               </div>
             ))}
-          </div>
-        </div>
+          </div> */}
+        {/* </div> */}
 
         {/* 4-Step Process */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-          {BUSINESS_MODEL_STEPS.map((step) => (
+        {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"> */}
+          {/* {BUSINESS_MODEL_STEPS.map((step) => (
             <div
               key={step.step}
               className="bg-white border border-[#E4E8EF] p-6 rounded-sm shadow-2xs hover:border-[#2457A7]/40 transition-colors flex flex-col justify-between"
@@ -97,11 +97,11 @@ export function BusinessModelSection() {
                 </div>
               </div>
             </div>
-          ))}
-        </div>
+          ))} */}
+        {/* </div> */}
 
         {/* Direct vs Shared Revenue Operating Model Explainer */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 sm:p-8 bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm">
+        {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 p-6 sm:p-8 bg-[#F7F8FA] border border-[#E4E8EF] rounded-sm">
           <div>
             <div className="text-xs font-bold text-[#2457A7] uppercase tracking-wider mb-1">
               Commercial Structuring
@@ -133,7 +133,7 @@ export function BusinessModelSection() {
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

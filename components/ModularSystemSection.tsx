@@ -68,7 +68,7 @@ export function ModularSystemSection() {
                 <div>
                   <span className="font-bold text-[#D9A65A]">POD ARCHITECTURE: </span>
                   <span className="text-slate-200">
-                    Assembled custom container café pod with central high-throughput service window and flanking digital perimeter screens.
+                    Assembled custom container pod with central high-throughput service window and flanking digital perimeter screens.
                   </span>
                 </div>
                 <div className="text-[10px] text-slate-300 font-mono shrink-0">
@@ -166,7 +166,7 @@ export function ModularSystemSection() {
               <Info className="w-4 h-4 text-[#2457A7] shrink-0 mt-0.5" />
               <div className="text-xs text-[#657184] leading-relaxed">
                 <span className="font-semibold text-[#14243A]">Deployment Assurance: </span>
-                Units feature universal ISO twist-lock corner castings compatible with standard intermodal maritime chassis, flatbed haulage, and telehandler forks.
+                Units feature universal ISO twist-lock corner castings compatible with standard intermodal maritime chassis, flatbed & haulage.
               </div>
             </div>
           </div>
