@@ -166,7 +166,7 @@ export const SOLUTIONS_ECOSYSTEM: SolutionItem[] = [
       'Purpose-built luxury washroom pods, medical triage stations, security hubs, and lost-and-found guest relations depots along the perimeter boundary.',
     commercialOpportunity:
       'Infrastructure service service-level fees, venue operational contracts, and sponsored comfort station integrations.',
-    image: '/images/high-density.jpg',
+    image: '/images/washroom-pod.jpg',
     capabilities: [
       'Water-saving vacuum flush infrastructure',
       'Continuous HVAC and touchless hygiene fixtures',

@@ -26,7 +26,7 @@ export function Navbar({ onOpenInquiry }: NavbarProps) {
     { label: 'Solutions', href: '#solutions' },
     { label: 'Business Model', href: '#business-model' },
     { label: 'Revenue Potential', href: '#revenue-potential' },
-    { label: 'Investors', href: '#investors' },
+    // { label: 'Investors', href: '#investors' },
     { label: 'Contact', href: '#contact' },
   ];
 
